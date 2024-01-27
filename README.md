@@ -1,4 +1,4 @@
-# trembling-hand-unraveled
+# The trembling hand unraveled: the motor dynamics and neural sources of choice inconsistency
 This is the code package for the manuscript “The trembling hand unraveled: the motor dynamics and neural sources of choice inconsistency” by Vered Kurtz-David, Asaf Madar, Adam Hakim, Noa Palmon & Dino J Levy.
 The manuscript presents the results from three studies (behavioral, MRI and replication studies). Only the behavioral study codes are currently shared in the repository. 
 ## System requirements
