@@ -11,7 +11,7 @@ To extract the mouse features from mouse tracking data, run the script located a
 - Input: see directories extract_mouse_features\data\Main task\Trial_level_data_and_parameters, extract_mouse_features\data\Main task\Mouse_tracking
 Each subject has 6 xls files, which contain their trial level mouse tracking data, and trial level inconsistency data, for all three tasks: main task, motor task and numerical task (3 tasks * 2 files per task).
 - Output: AllResults-Main task.mat, AllResults-Motor_localizer.mat, AllResults-Numerical_localizer.mat. These are mouse features structs stored in three files corresponding to the three tasks used in the manuscript, and are required for the next sections.
-<br>Runtime: 35-40 minutes.
+<br><br>Runtime: 35-40 minutes.
 ### Inconsistency indices
 To generate the inconsistency indices download the code package provided by Halevey et al. (2018) from https://github.com/persitzd/RP-Toolkit 
 <br>The output of the trial-level inconsistency indices is located in extract_mouse_features\data\Main task\Trial_level_data_and_parameters.
