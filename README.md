@@ -5,7 +5,7 @@ The manuscript presents the results from three studies (behavioral, MRI and repl
 The code was run and tested on MATLAB 2021b edition, Windows 11.
 ## Installation guide
 Install MATLAB 2020b or later. 
-Install the Deep Learning Toolbox and the Symbolic Math Toolbox.
+<br>Install the Deep Learning Toolbox and the Symbolic Math Toolbox.
 ## Demo
 To extract the mouse features from mouse tracking data, run the script located at mouse_features_code_package\main.m using MATLAB’s interface.
 - Input: see directories mouse_features_code_package\data\Main task\Trial_level_data_and_parameters, mouse_features_code_package\data\Main task\Mouse_tracking
@@ -31,7 +31,7 @@ Input: The code uses the subject-level inconsistency indices (output from the Ha
 2) For plotting the share of total expenditure that subjects allocated to the Y-axis as a function of the budget line’s slope, run Fig2b_PlottingSubjectsChoicesLogPrices_aggregateAllSubs.m. 
 Input: The code uses subjects’ choices raw data from all three studies.
 3) For plotting the distributions of Euclidean Distances from targets in the non-value tasks, run Fig2c_EucDist_distributions.m
-Input: The code uses as input the design matrices from the cross-tasks regressions. See ### Figures 4 & 5 below for details about generating those matrices (for the Behavioral study). 
+Input: The code uses as input the design matrices from the cross-tasks regressions. See Figures 4 & 5 below for details about generating those matrices (for the Behavioral study). 
 ### Figure 3
 For plotting subjects’ mouse features distributions run the code in directory fig3: Fig3e_features_dist_across_trials_and_subjects_BehavioralStudy.m. 
 - Input: AllResults-Main task.mat (output of mouse_features_code_package\main.m)
