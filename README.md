@@ -8,9 +8,9 @@ Install MATLAB 2020b or later.
 Install the Deep Learning Toolbox and the Symbolic Math Toolbox.
 ## Demo
 To extract the mouse features from mouse tracking data, run the script located at mouse_features_code_package\main.m using MATLAB’s interface.
-Inputs: located in mouse_features_code_package\data\Main task\Trial_level_data_and_parameters and mouse_features_code_package\data\Main task\Mouse_tracking. 
+- Input: see directories mouse_features_code_package\data\Main task\Trial_level_data_and_parameters, mouse_features_code_package\data\Main task\Mouse_tracking
 Each subject has 6 xls files, which contain their trial level mouse tracking data, and trial level inconsistency data, for all three tasks: main task, motor task and numerical task (3 tasks * 2 files per task).
-Output: mouse features structs stored in three files corresponding to the three tasks used in the manuscript: AllResults-Main task.mat, AllResults-Motor_localizer.mat, AllResults-Numerical_localizer.mat. These .mat files are required for the next sections.
+- Output: AllResults-Main task.mat, AllResults-Motor_localizer.mat, AllResults-Numerical_localizer.mat. These are mouse features structs stored in three files corresponding to the three tasks used in the manuscript, and are required for the next sections.
 Runtime: 35-40 minutes.
 ### Inconsistency indices
 To generate the inconsistency indices download the code package provided by Halevey et al. (2018) from https://github.com/persitzd/RP-Toolkit 
@@ -34,17 +34,17 @@ Input: The code uses subjects’ choices raw data from all three studies.
 Input: The code uses as input the design matrices from the cross-tasks regressions. See ### Figures 4 & 5 below for details about generating those matrices (for the Behavioral study). 
 ### Figure 3
 For plotting subjects’ mouse features distributions run the code in directory fig3: Fig3e_features_dist_across_trials_and_subjects_BehavioralStudy.m. 
-Input: AllResults-Main task.mat (output of mouse_features_code_package\main.m)
+- Input: AllResults-Main task.mat (output of mouse_features_code_package\main.m)
 ### Figure 4 & 5
 For regression analyses, run the following codes:
 1) Create regression design matrices for each task (which also z-score features values), using: writeDesignMatrix_MainTask_BehavioralStudy.m, writeDesignMatrix_MotorTask_BehavioralStudy.m, writeDesignMatrix_NumericalTask_BehavioralStudy.m
-Inputs: AllResults-Main task.mat, AllResults-Motor_localizer.mat, AllResults-Numerical_localizer.mat.
-Output: DesignMatrix_ZScoredAcrossSubject_MotorTask_BehavioralStudy.xls, DesignMatrix_ZScoredAcrossSubject_NumericalTask_BehavioralStudy.xls, DesignMatrix_ZScoredAcrossSubjectWithNans_MainTaskBehavioralStudy.xls
+- Inputs: AllResults-Main task.mat, AllResults-Motor_localizer.mat, AllResults-Numerical_localizer.mat
+- Output: DesignMatrix_ZScoredAcrossSubject_MotorTask_BehavioralStudy.xls, DesignMatrix_ZScoredAcrossSubject_NumericalTask_BehavioralStudy.xls, DesignMatrix_ZScoredAcrossSubjectWithNans_MainTaskBehavioralStudy.xls
 2) Combine those design matrices into one design matrix for all the cross-tasks regressions, using create_trial_by_trial_matrix.m
-Output: DesignMatrix_AcrossTasks_BehavioralStudy.xls
+- Output: DesignMatrix_AcrossTasks_BehavioralStudy.xls
 3) Run regressions that only include the main task, using Regressions_onlyMainTask_SelectedFeatures_BehavioralStudy.m
-Input: DesignMatrix_ZScoredAcrossSubjectWithNans_MainTaskBehavioralStudy.xls
+- Input: DesignMatrix_ZScoredAcrossSubjectWithNans_MainTaskBehavioralStudy.xls
 Apart from the regression tables, this code also output Fig. 4e (Behavioral study) and Supplementary Fig. 9.
 4) Run the cross-tasks regressions, using Regressions_AllTasksCombined_SelectedFeatures_BehavioralStudy.m
-Input: DesignMatrix_AcrossTasks_BehavioralStudy.xls
+- Input: DesignMatrix_AcrossTasks_BehavioralStudy.xls
 Apart from the regression tables, this code also output Fig. 4d (Behavioral study) and Fig. 5b.
