@@ -2,9 +2,9 @@
 This is the code package for the manuscript “The trembling hand unraveled: the motor dynamics and neural sources of choice inconsistency” by Vered Kurtz-David, Asaf Madar, Adam Hakim, Noa Palmon & Dino J Levy.
 <br>The manuscript presents the results from three studies (behavioral, MRI and replication studies). Only the behavioral study codes are currently shared in the repository. 
 ## System requirements
-The code was run and tested on MATLAB 2021b edition, Windows 11.
+The code was run and tested on MATLAB 2020b, 2021b and 2022b editions on Windows 11.
 ## Installation guide
-Install MATLAB 2020b, 2021b, or 2022b editions. 
+Install MATLAB 2022b edition. 
 <br>Install the Deep Learning Toolbox and the Symbolic Math Toolbox.
 ## Demo
 To extract the mouse features from mouse tracking data, run the script located at extract_mouse_features\main.m using MATLAB’s interface.
