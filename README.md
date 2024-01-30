@@ -32,7 +32,7 @@ Input: The code uses the subject-level inconsistency indices (output from the Ha
 2) For plotting the share of total expenditure that subjects allocated to the Y-axis as a function of the budget line’s slope, run Fig2b_PlottingSubjectsChoicesLogPrices_aggregateAllSubs.m. 
 Input: The code uses subjects’ choices raw data from all three studies.
 3) For plotting the distributions of Euclidean Distances from targets in the non-value tasks, run Fig2c_EucDist_distributions.m
-Input: The code uses as input the design matrices from the cross-tasks regressions. See ### Figures 4 & 5 below for details about generating those matrices (for the Behavioral study). 
+Input: The code uses as input the design matrices from the cross-tasks regressions. See Figures 4 & 5 below for details about generating those matrices (for the Behavioral study). 
 ### Figure 3
 For plotting subjects’ mouse features distributions run the code in directory fig3: Fig3e_features_dist_across_trials_and_subjects_BehavioralStudy.m. 
 - Input: AllResults-Main task.mat (output of extract_mouse_features\main.m)
