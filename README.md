@@ -3,7 +3,7 @@ This is the code package for the manuscript “The trembling hand unraveled: the
 <br>The manuscript presents the results from three studies (behavioral, MRI and replication studies). Only the behavioral study codes are currently shared in the repository. 
 ## System requirements
 The code was run and tested on MATLAB 2020b, 2021b and 2022b editions on Windows 11.
-Cluster correction code for fMRI requires bvbabel (BrainVoyager's Python package). Installation from https://github.com/ofgulban/bvbabel 
+<br>fMRI cluster correction code requires bvbabel (BrainVoyager's Python package). Installation from https://github.com/ofgulban/bvbabel 
 ## Installation guide
 Install MATLAB 2022b edition. 
 <br>Install the Deep Learning Toolbox and the Symbolic Math Toolbox.
